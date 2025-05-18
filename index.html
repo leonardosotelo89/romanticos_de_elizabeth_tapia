@@ -125,7 +125,7 @@ sounds[9] = {
 function random(array){
   let radial1 = `hsl(${Math.random()*360}deg,100%,50%)`
   let radial2 = `hsl(${Math.random()*360}deg,100%,50%)`
-  document.body.style.background = `radial-gradient(circle at 50% 50%, ${radial1}, ${radial2}, #000000`
+  document.body.style.background = `radial-gradient(circle at 50% 50%, ${radial1}, ${radial2}, ${radial1}, ${radial2}, rgb(0,0,0), #000000`
   
   mainaudio.pause()
   mainaudio.currentTime = 0
