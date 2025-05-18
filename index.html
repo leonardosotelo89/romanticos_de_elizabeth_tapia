@@ -55,6 +55,17 @@ font-weight:500;
 
 
 <script>
+
+div1.style.position = 'absolute'
+div1.style.left = '50%'
+div1.style.top = '50%'
+div1.style.transform = 'translate(-50%,-50%)'
+div1.style.borderRadius = '50%'
+div1.style.width = window.innerHeight /1.5
+div1.style.height = window.innerHeight /1.5
+
+
+
 let mainaudio = new Audio()
 let sounds = []
 let already = [] 
@@ -125,7 +136,7 @@ sounds[9] = {
 function random(array){
   let radial1 = `hsl(${Math.random()*360}deg,100%,50%)`
   let radial2 = `hsl(${Math.random()*360}deg,100%,50%)`
-  document.body.style.background = `radial-gradient(circle at 50% 50%, ${radial1}, ${radial2}, ${radial1}, ${radial2}, rgb(0,0,0), #000000`
+  div1.style.background = `radial-gradient(circle at 50% 50%, ${radial1}, ${radial2}, ${radial1}, ${radial2}, rgb(0,0,0), #000000`
   
   mainaudio.pause()
   mainaudio.currentTime = 0
